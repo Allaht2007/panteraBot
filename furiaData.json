@@ -1,0 +1,62 @@
+{
+    "!time": [{
+        "nome":"FURIA Esports",
+        "fundacao":"2017",
+        "fundadores":"Jaime Pádua, André Akkari, Cristian Guedes e Nicholas Nogueira",
+        "pais":"Brasil",
+        "historico": "FURIA Esports foi fundada em 2017 e rapidamente se tornou uma das principais equipes de CS no Brasil. Com um estilo de jogo agressivo e inovador, a equipe conquistou diversos títulos e se consolidou como uma potência no cenário internacional."
+    }],
+    "!lineup": [
+        {
+            "nome": "Yuri 'yuurih' Boian",
+            "funcao": "Rifler",
+            "entrada": "2017-11-08"
+        },
+        {
+            "nome": "Kaike 'KSCERATO' Cerato",
+            "funcao": "Rifler",
+            "entrada": "2018-02-06"
+        },
+        {
+            "nome": "Gabriel 'FalleN' Toledo",
+            "funcao": "AWPer / IGL",
+            "entrada": "2023-07-03"
+        },
+        {
+            "nome": "Danil 'molodoy' Golubenko",
+            "funcao": "Rifler",
+            "entrada": "2025-04-11"
+        },
+        {
+            "nome": "Mareks 'YEKINDAR' Gaļinskis",
+            "funcao": "Stand-in",
+            "entrada": "2025-04-22"
+        },
+        {
+        "nome": "Sidnei 'sidde' Macedo",
+        "função":"coach",
+        "entrada": "2024-07-09"
+        }
+    ],
+    
+    "!premios": [
+        {
+            "torneio": "IEM Season XVII - Cologne",
+            "ano": 2022,
+            "posicao": "7º-8º",
+            "premio": "$24,000"
+        },
+        {
+            "torneio": "PGL Major Antwerp",
+            "ano": 2022,
+            "posicao": "5º-8º",
+            "premio": "$35,000"
+        },
+        {
+            "torneio": "ESL Pro League Season 6",
+            "ano": 2022,
+            "posicao": "9º",
+            "premio": "$32,000"
+        }
+    ]
+}
