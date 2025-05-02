@@ -137,3 +137,4 @@ dist
 
 #Whatsapp_web.js
 .wwebjs_cache/
+.wwebjs_auth/

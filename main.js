@@ -1,4 +1,4 @@
-const { Client } = require("whatsapp-web.js");
+const { Client, LocalAuth } = require("whatsapp-web.js");
 const qrcode = require("qrcode-terminal");
 const fs = require("fs");
 const functions = require("./functions");
@@ -9,7 +9,9 @@ const furiaData = JSON.parse(fs.readFileSync("furiaData.json", "utf-8"));
 // Variável de estado para ativar/desativar o bot
 var botAtivo = false;
 
-const client = new Client();
+const client = new Client({
+    authStrategy: new LocalAuth()
+});
 
 client.on("qr", qr => {
     qrcode.generate(qr, { small: true });
@@ -77,7 +79,7 @@ client.on("message_create", async (message) => {
     }
 
     //If especificado para oS jogadores
-    if(comando.startsWith("!jogador#")){
+    if(comando.startsWith("!jogador#" && botAtivo)){
         const nomeJogador = comando.replace("!jogador#", "").trim().toLowerCase();
 
         if (furiaData["!jogador"][nomeJogador]) {
