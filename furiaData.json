@@ -23,17 +23,17 @@
             "entrada": "2023-07-03"
         },
         {
-            "nome": "Danil 'molodoy' Golubenko",
+            "nome": "Danil 'Molodoy' Golubenko",
             "funcao": "Rifler",
             "entrada": "2025-04-11"
         },
         {
             "nome": "Mareks 'YEKINDAR' Gaļinskis",
-            "funcao": "Stand-in",
+            "funcao": "Rifler / Entry Fragger",
             "entrada": "2025-04-22"
         },
         {
-        "nome": "Sidnei 'sidde' Macedo",
+        "nome": "Sidnei 'Sidde' Macedo",
         "função":"coach",
         "entrada": "2024-07-09"
         }
@@ -58,5 +58,92 @@
             "posicao": "9º",
             "premio": "$32,000"
         }
-    ]
+    ],
+    "!jogador": {
+        "fallen": {
+            "nome": "Gabriel 'FalleN' Toledo",
+            "idade": "33",
+            "pais":"Brasil",
+            "estatisticas": {
+                "rating": 1.05,
+                "kd_ratio": 1.13,
+                "impacto": 1.07,
+                "kast": "71.6%",
+                "total_abates": 35036,
+                "total_mortes": 31013,
+                "dano_por_round": 70.5,
+                "mapas_jogados": 1995,
+                "rounds_jogados": 51184
+            }
+
+        },
+        "yuurih": {
+            "nome": "Yuri 'yuurih' Santos",
+            "funcao": "Rifler",
+            "entrada": "2017-11-08",
+            "pais": "Brasil",
+            "idade": 25,
+            "estatisticas": {
+                "rating": 1.16,
+                "kd_ratio": 1.16,
+                "impacto": 1.13,
+                "kast": "73.3%",
+                "total_abates": 26322,
+                "total_mortes": 22696,
+                "dano_por_round": 82.8,
+                "mapas_jogados": 1411,
+                "rounds_jogados": 35739
+            }
+        },
+        "yekindar": {
+            "nome": "Mareks 'YEKINDAR' Gaļinskis",
+            "pais": "Letônia",
+            "idade": 25,
+            "estatisticas": {
+                "rating": 1.12,
+                "kd_ratio": 1.05,
+                "impacto": 1.28,
+                "kast": "69.0%",
+                "total_abates": 28269,
+                "total_mortes": 26878,
+                "dano_por_round": 81.4,
+                "mapas_jogados": 1489,
+                "rounds_jogados": 38731
+            }
+        },
+        "kscerato": {
+            "nome": "Kaike 'KSCERATO' Cerato",
+            "pais": "Brasil",
+            "idade": 25,
+            "estatisticas": {
+                "rating": 1.19,
+                "kd_ratio": 1.25,
+                "impacto": 1.12,
+                "kast": "75.0%",
+                "total_abates": 24346,
+                "total_mortes": 19411,
+                "dano_por_round": 79.9,
+                "mapas_jogados": 1318,
+                "rounds_jogados": 33242
+            }
+        },
+        "molodoy": {
+            "nome": "Danil 'molodoy' Golubenko",
+            "pais": "Cazaquistão",
+            "idade": 20,
+            "estatisticas": {
+                "rating": 1.21,
+                "kd_ratio": 1.35,
+                "impacto": 1.24,
+                "kast": "73.4%",
+                "total_abates": 2582,
+                "total_mortes": 1908,
+                "dano_por_round": 81.0,
+                "mapas_jogados": 148,
+                "rounds_jogados": 3194
+            }
+        }
+
+}
+
 }
