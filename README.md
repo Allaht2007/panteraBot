@@ -8,7 +8,7 @@
 
 ## <strong>Apresentação</strong>
 
-    Pantera Bot é o seu companheiro definitivo para tudo sobre FURIA Esports! 🐾🔥 Especializado no time de CS2, ele traz informações detalhadas sobre jogadores, partidas e conquistas da equipe brasileira.
+Pantera Bot é o seu companheiro definitivo para tudo sobre FURIA Esports! 🐾🔥 Especializado no time de CS2, ele traz informações detalhadas sobre jogadores, partidas e conquistas da equipe brasileira.
 
 ## <strong>Funcionalidades</strong>
 Com o Pantera Bot é possível requisitar informações sobre:
