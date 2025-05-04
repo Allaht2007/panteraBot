@@ -30,7 +30,7 @@ client.on("message_create", async (message) => {
         try{
 
             botAtivo = true;
-            client.sendMessage(message.from, `Olá ${contato.pushname}, me chamo Pantera! Em que posso ajuda-lo?\nComandos: \n 🏆 - !time\n ⚔️ - Jogos \n 🔥 - !lineup\n 🏅 - !premios\n ⭐ - !jogador#nickname`);
+            client.sendMessage(message.from, `Olá ${contato.pushname}, me chamo Pantera! Em que posso ajuda-lo?\nComandos: \n 🏆 - !time\n ⚔️ - !jogos \n 🔥 - !lineup\n 🏅 - !premios\n ⭐ - !jogador#nickname`);
         
         }catch(error){
 
@@ -40,6 +40,9 @@ client.on("message_create", async (message) => {
         }
         
         return
+    }
+    if(comando === "!voltar"){
+        client.sendMessage(message.from, "Menu: \n 🏆 - !time\n ⚔️ - !jogos \n 🔥 - !lineup\n 🏅 - !premios\n ⭐ - !jogador#nickname");
     }
 
     // Desativar o bot com !sair
@@ -91,7 +94,7 @@ client.on("message_create", async (message) => {
         
             const jogador = furiaData["!jogador"][nomeJogador];
 
-            const resposta = `👤 *Nome:* ${jogador.nome}\n🌍 *País:* ${jogador.pais}\n📊 *Rating:* ${jogador.estatisticas.rating}\n💀 *K/D Ratio:* ${jogador.estatisticas.kd_ratio}\n🔥 *Impacto:* ${jogador.estatisticas.impacto}\n🛡️ *KAST:* ${jogador.estatisticas.kast}\n🔫 *Total de abates:* ${jogador.estatisticas.total_abates}\n💀 *Total de mortes:* ${jogador.estatisticas.total_mortes}\n⚔️ *Dano por round:* ${jogador.estatisticas.dano_por_round}\n🗺️ *Mapas jogados:* ${jogador.estatisticas.mapas_jogados}\n🔄 *Rounds jogados:* ${jogador.estatisticas.rounds_jogados}`;
+            const resposta = `👤 *Nome:* ${jogador.nome}\n🌍 *País:* ${jogador.pais}\n📊 *Rating:* ${jogador.estatisticas.rating}\n💀 *K/D Ratio:* ${jogador.estatisticas.kd_ratio}\n🔥 *Impacto:* ${jogador.estatisticas.impacto}\n🛡️ *KAST:* ${jogador.estatisticas.kast}\n🔫 *Total de abates:* ${jogador.estatisticas.total_abates}\n💀 *Total de mortes:* ${jogador.estatisticas.total_mortes}\n⚔️ *Dano por round:* ${jogador.estatisticas.dano_por_round}\n🗺️ *Mapas jogados:* ${jogador.estatisticas.mapas_jogados}\n🔄 *Rounds jogados:* ${jogador.estatisticas.rounds_jogados}\n\n↩️ !voltar\n`;
             let fotoJogador = MessageMedia.fromFilePath(jogador.foto)
 
             if(fotoJogador){

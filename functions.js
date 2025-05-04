@@ -12,6 +12,7 @@ function formatarDados(furiaData, comando, client, message, MessageMedia) {
         resultado += `👨‍💼 Fundadores: ${time.fundadores}\n`;
         resultado += `🌍 País: ${time.pais}\n\n`;
         resultado += `📜 História:\n${time.historico}\n\n`;
+        resultado +="↩️ !voltar\n\n";
     }
 
     else if(comando == "!lineup") {
@@ -21,6 +22,7 @@ function formatarDados(furiaData, comando, client, message, MessageMedia) {
             resultado += `👤 Nome: ${jogador.nome}\n`;
             resultado += `🎭 Função: ${jogador.funcao}\n`;
             resultado += `🗓️ Entrada: ${jogador.entrada}\n\n`;
+            resultado +="↩️ !voltar\n\n";
         });
     }
     else if(comando =="!jogos"){
@@ -31,6 +33,7 @@ function formatarDados(furiaData, comando, client, message, MessageMedia) {
             resultado += `🏆 Torneio: ${jogo.torneio}\n`;
             resultado += `📅 Data: ${jogo.data}\n`;
             resultado += `⚔️ Oponente: ${jogo.oponente}\n\n`;
+            resultado +="↩️ !voltar\n\n";
 
         });
     }
@@ -42,6 +45,7 @@ function formatarDados(furiaData, comando, client, message, MessageMedia) {
             resultado += `📅 Ano: ${premio.ano}\n`;
             resultado += `📊 Posição: ${premio.posicao}\n`;
             resultado += `💰 Prêmio: ${premio.premio}\n\n`;
+            resultado +="↩️!voltar\n\n";
         });
     }
 
