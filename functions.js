@@ -1,9 +1,12 @@
-function formatarDados(furiaData, comando) {
+function formatarDados(furiaData, comando, client, message, MessageMedia) {
     let resultado = "";
-
+    let media = null;
     
     if (comando == "!time") {
+
+        
         const time = furiaData["!time"][0];
+        media = MessageMedia.fromFilePath(time.foto);
         resultado += `🏆 *Time: ${time.nome}*\n`;
         resultado += `📅 Fundação: ${time.fundacao}\n`;
         resultado += `👨‍💼 Fundadores: ${time.fundadores}\n`;
@@ -11,8 +14,8 @@ function formatarDados(furiaData, comando) {
         resultado += `📜 História:\n${time.historico}\n\n`;
     }
 
-    
-    if (comando == "!lineup") {
+    else if(comando == "!lineup") {
+        media = MessageMedia.fromFilePath("./src/fotoLineup.jpg")
         resultado += "🔥 *Lineup Atual:*\n";
         furiaData["!lineup"].forEach(jogador => {
             resultado += `👤 Nome: ${jogador.nome}\n`;
@@ -20,10 +23,20 @@ function formatarDados(furiaData, comando) {
             resultado += `🗓️ Entrada: ${jogador.entrada}\n\n`;
         });
     }
+    else if(comando =="!jogos"){
 
-    
-    if (comando == "!premios") {
-        resultado += "🏅 *Prêmios e Conquistas:*\n";
+        resultado += "🎮 *Próximos Jogos:*\n";
+        furiaData["!jogos"].forEach(jogo => {
+
+            resultado += `🏆 Torneio: ${jogo.torneio}\n`;
+            resultado += `📅 Data: ${jogo.data}\n`;
+            resultado += `⚔️ Oponente: ${jogo.oponente}\n\n`;
+
+        });
+    }
+
+    else if(comando == "!premios") {
+        resultado += "🏅 *Prêmios e Conquistas:*\n\n";
         furiaData["!premios"].forEach(premio => {
             resultado += `🏆 Torneio: ${premio.torneio}\n`;
             resultado += `📅 Ano: ${premio.ano}\n`;
@@ -32,7 +45,7 @@ function formatarDados(furiaData, comando) {
         });
     }
 
-    return resultado.trim();
+    return {msgFormatada:resultado.trim(),media};
 }
 
 

@@ -4,9 +4,11 @@
         "fundacao":"2017",
         "fundadores":"Jaime Pádua, André Akkari, Cristian Guedes e Nicholas Nogueira",
         "pais":"Brasil",
-        "historico": "FURIA Esports foi fundada em 2017 e rapidamente se tornou uma das principais equipes de CS no Brasil. Com um estilo de jogo agressivo e inovador, a equipe conquistou diversos títulos e se consolidou como uma potência no cenário internacional."
-    }],
+        "historico": "FURIA Esports foi fundada em 2017 e rapidamente se tornou uma das principais equipes de CS no Brasil. Com um estilo de jogo agressivo e inovador, a equipe conquistou diversos títulos e se consolidou como uma potência no cenário internacional.",
+        "foto":"./src/furiaFoto.jpg"
+        }],
     "!lineup": [
+        
         {
             "nome": "Yuri 'yuurih' Boian",
             "funcao": "Rifler",
@@ -33,30 +35,43 @@
             "entrada": "2025-04-22"
         },
         {
-        "nome": "Sidnei 'Sidde' Macedo",
-        "função":"coach",
-        "entrada": "2024-07-09"
+            "nome": "Sidnei 'Sidde' Macedo",
+            "função":"coach",
+            "entrada": "2024-07-09"
         }
     ],
     
     "!premios": [
         {
-            "torneio": "IEM Season XVII - Cologne",
-            "ano": 2022,
-            "posicao": "7º-8º",
-            "premio": "$24,000"
+            "torneio": "Elisa Masters Espoo 2023",
+            "ano": 2023,
+            "posicao": "1º",
+            "premio": "$100,000"
         },
         {
-            "torneio": "PGL Major Antwerp",
-            "ano": 2022,
-            "posicao": "5º-8º",
-            "premio": "$35,000"
+            "torneio": "IEM New York 2020 North America",
+            "ano": 2020,
+            "posicao": "1º",
+            "premio": "$25,000"
         },
         {
-            "torneio": "ESL Pro League Season 6",
-            "ano": 2022,
-            "posicao": "9º",
-            "premio": "$32,000"
+            "torneio": "ESL Pro League Season 12 North America",
+            "ano": 2020,
+            "posicao": "1º",
+            "premio": "$77,500"
+        },
+        {
+            "torneio": "DreamHack Masters Spring 2020 - North America",
+            "ano": 2020,
+            "posicao": "1º",
+            "premio": "$40,000"
+        }
+    ],
+    "!jogos":[
+        {
+            "torneio":"PGL Astana 2025",
+            "data":"10/05/2025",
+            "oponente":"The MongolZ"
         }
     ],
     "!jogador": {
@@ -74,7 +89,8 @@
                 "dano_por_round": 70.5,
                 "mapas_jogados": 1995,
                 "rounds_jogados": 51184
-            }
+            },
+            "foto":"./src/fotoFallen.webp"
 
         },
         "yuurih": {
@@ -93,7 +109,8 @@
                 "dano_por_round": 82.8,
                 "mapas_jogados": 1411,
                 "rounds_jogados": 35739
-            }
+            },
+            "foto":"./src/fotoYuurih.webp"
         },
         "yekindar": {
             "nome": "Mareks 'YEKINDAR' Gaļinskis",
@@ -109,7 +126,8 @@
                 "dano_por_round": 81.4,
                 "mapas_jogados": 1489,
                 "rounds_jogados": 38731
-            }
+            },
+            "foto":"./src/fotoYekindar.webp"
         },
         "kscerato": {
             "nome": "Kaike 'KSCERATO' Cerato",
@@ -125,7 +143,8 @@
                 "dano_por_round": 79.9,
                 "mapas_jogados": 1318,
                 "rounds_jogados": 33242
-            }
+            },
+            "foto":"./src/fotoKscerato.webp"
         },
         "molodoy": {
             "nome": "Danil 'molodoy' Golubenko",
@@ -141,7 +160,8 @@
                 "dano_por_round": 81.0,
                 "mapas_jogados": 148,
                 "rounds_jogados": 3194
-            }
+            },
+            "foto":"./src/fotoMolodoy.webp"
         }
 
 }
