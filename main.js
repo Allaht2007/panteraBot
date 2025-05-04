@@ -30,7 +30,7 @@ client.on("message_create", async (message) => {
         try{
 
             botAtivo = true;
-            client.sendMessage(message.from, `Olá ${contato.pushname}, me chamo Pantera! Em que posso ajuda-lo?\nComandos: \n 🏆 - !time\n ⚔️ - !Jogos \n 🔥 - !lineup\n 🏅 - !premios\n ⭐ - !jogador#nickname`);
+            client.sendMessage(message.from, `Olá ${contato.pushname}, me chamo Pantera! Em que posso ajuda-lo?\nComandos: \n 🏆 - !time\n ⚔️ - !jogos \n 🔥 - !lineup\n 🏅 - !premios\n ⭐ - !jogador#nickname`);
         
         }catch(error){
 
